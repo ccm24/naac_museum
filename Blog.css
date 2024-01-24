@@ -1,0 +1,233 @@
+/*MENÚ*/
+/*Conceptes generals*/
+*{
+    /*Te una vora de 0px*/
+    padding: 0px;
+    /*Te marge de 0px*/
+    margin: 0px;
+    /*Calcula l'alçada i l'amplada de la galeria*/
+}
+
+/*Afecta al contenidor div, que englova tot el menú */
+#header{
+    /*L'alçada que tindrà*/
+    height: 60px;
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:left;
+    /*Color del fons del menú*/
+    background-color: white;
+}
+
+.nav{
+    /*Genera una caixa d'element bloc però es mou amb el contingut*/
+    display: inline-block;
+    /*Especifica l'apariencia del llistat dient-li que no volem cap*/
+    list-style-type: none;
+    /*Marge entre el menú i la part superior*/
+    margin-top: 10px;
+}
+
+/*Afecta a les llistes*/
+ul, ol{
+    /*No tindrà cap estil*/
+    list-style: none;
+}
+
+/*Estil pels nostre menú*/
+.nav li a{
+    /*Color del fons*/
+    background-color: white;
+    /*Color de la lletra*/
+    color: black;
+    /*Diem que no tingui decoració les paraules*/
+    text-decoration: none;
+    /*Mida de la tipografia*/
+    font-size: 22px;
+    /*Que tingui un marge de 10px d'altura i un marge de 15px d'amplada*/
+    padding: 10px 15px;
+    /*Que sigui considerat un block*/
+    display: block;
+    width: 170px;
+}
+
+/*Estil pel nostre menú quan el ratolí passi per damunt*/
+.nav li a:hover{
+    /*Color del fons*/
+    background-color: red;
+}
+
+/*Li directes de dins del nav*/
+.nav > li{
+    /*Li donem forma*/
+    float: left;
+}
+
+/*Afecta als ul dels li del nav*/
+.nav li ul{
+    /*Desapareixen els submenús*/
+    display: none;
+    /*Posició absoluta */
+    position:absolute;
+    /*Mida del recuadre del submenú*/
+    min-width: 182px;
+}
+
+/*Afecta als li del nav directes del ul quan passa el ratolí per damunt*/
+.nav li:hover> ul{
+    /*Ho transformem en block perquè surtin els blocs al costat*/
+    display:block;
+}
+
+/*Afecta als li dels ul dels li dintre de nav, serien els submenús*/
+.nav li ul li{
+    /*Posició relativa*/
+    position: relative;
+}
+
+/*Afecta als ul dels li dels ul dels li dintre de nav*/
+.nav li ul li ul{
+    /*Que es col·loqui a la dreta*/
+    left: 200px;
+    /*Peerquè la seva posició sigui 0*/
+    top: 0px;
+}
+
+
+/*LOGO DEL MUSEU*/
+.Logo{
+    /*Amplada de la fotografia*/
+    width:20%;
+    /*Posició del logo*/
+    float: right;
+    /*Marge dret de la fotografia*/
+    margin-right: 20px;
+    /*Color de fons*/
+    background-color: white;
+    +
+}
+
+
+/*COMPTE D'USUARI*/
+#Pagar{
+    /*L'alçada que tindrà*/
+    height: 60px;
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:right;
+    /*Deix un marge a la part superior*/
+    padding-top: 140px;
+    margin-right: 20px;
+    
+}
+.Pag{
+    /*Genera una caixa d'element bloc però es mou amb el contingut*/
+    display: inline-block;
+    /*Especifica l'apariencia del llistat dient-li que no volem cap*/
+    list-style-type: none;
+    
+}
+
+/*Afecta a les llistes*/
+ul, ol{
+    /*No tindrà cap estil*/
+    list-style: none;
+    
+}
+
+/*Estil pels nostre menú*/
+.Pag li a{
+    /*Color del fons*/
+    background-color: white;
+    /*Color de la lletra*/
+    color: black;
+    /*Diem que no tingui decoració les paraules*/
+    text-decoration: none;
+    /*Mida de la tipografia*/
+    font-size: 15px;
+    /*Que tingui un marge de 10px d'altura i un marge de 15px d'amplada*/
+    padding: 10px 15px;
+    /*Que sigui considerat un block*/
+    display: block;
+    /*Ample del recuadre*/
+    width: 122px;
+    /*Perque el text estigui al centre*/
+    text-align: center;
+  
+}
+
+/*Estil pel nostre menú quan el ratolí passi per damunt*/
+.Pag li a:hover{
+    /*Color del fons*/
+    background-color: red;
+    
+}
+
+/*Li directes de dins del nav*/
+.Pag > li{
+    /*Li donem forma*/
+    float: left;
+    
+}
+
+
+
+/*BLOG*/
+.clear{
+    /*Perquè les seccions quedin una sota de l'altre*/
+    clear: both;
+}
+
+/*Afecta al primer article del blog*/
+.Blog{
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*La mida que tindrà la tipografia*/
+    font-size: 20px;
+    /*El text estarà col·locat a la part dreta*/
+    float:right;
+    /*L'amplada que tindrà el text*/
+    width: 87%;    
+}
+
+h1{
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align: center;
+}
+
+/*Afecta a les fotografies dels articles*/
+.Foto{
+    /*Amplada de la fotografia*/
+    width: 10%;
+    /*Alçada de la fotografia*/
+    height: 10%;
+    /*La fotografia estarà col·locada al costat esquerra*/
+    text-align: left;
+    /*El marge que te al costat esquerra*/
+    margin-left: 10px;
+}
+
+/*FOOTER*/
+/*Fotografies del footer*/
+.Footer{
+    /*Amplada de les fotografies*/
+    width: 5%;
+    /*Alçada de les fotografies*/
+    height: 5%;
+}
+
+/*Posició del footer*/
+footer{
+    /*Color de fons*/
+    background-color: white;
+    /*Marge de 90px amb el text superior*/
+    margin-top: 10px;
+    /*Fotografies centrades*/
+    text-align: center;
+}
+
+

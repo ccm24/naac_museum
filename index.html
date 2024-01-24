@@ -1,0 +1,180 @@
+<!--Códig per indicar que està escrit en la versió HTML5-->
+<!DOCTYPE html>
+<!--Declararem que l'idioma del HTML serà el Català-->
+<html lang="ca">
+
+
+
+    <head>
+        <!--Declarem la codificació dels caràcters-->
+        <meta charset="UTF-8" />
+        <!--Donem nom al document-->
+        <title>Museu NAAC</title>
+        <!--Link per ajuntar el CSS-->
+        <link rel="stylesheet" type="text/css" href="./Museu.css" />
+        <!--Link per agregar una icona a la pestanya de la pàgina web-->
+        <link rel="icon" href="./Fotos/bmth.ico">
+    </head>
+
+    <body>
+    <!--MENÚ--> 
+        <header>
+        <!--Creem la llista dels diferents apartats del menú-->
+            <div id="header">
+                <ul class="nav">
+                    <li><a href="./Visita.html">VISITA</a><ul>
+                    <!--Creem la llista dels diferents apartats del desplegable-->
+                        <li><a href="./Visita.html#Horari">HORARI</a></li>
+                        <li><a href="./Visita.html#Preus">PREU</a></li>
+                        <li><a href="./Visita.html#Visites">VISITES GUIADES</a></li>
+                    </ul></li>
+                    <li><a href="./Col·leccio.html">COL·LECCIÓ</a><ul>
+                    <!--Creem la llista dels diferents apartats del desplegable-->
+                        <li><a href="./Col·leccio.html#Cataleg">CATÀLEG</a></li>
+                        <li><a href="./Col·leccio.html#Sales">SALES</a><ul>
+                            <li><a href="./Col·leccio.html#Disseny">DISSENY GRÀFIC</a></li>
+                            <li><a href="./Col·leccio.html#Imatges">IMATGES I VIDEOS</a></li>
+                            <li><a href="./Col·leccio.html#Contemporani">CONTEMPORANI</a></li>
+                            <li><a href="./Col·leccio.html#Historic">HISTÒRIC</a></li>
+                        </ul></li>
+                    </ul></li>
+                    <li><a href="./Activitats.html">ACTIVITATS</a><ul>
+                        <li><a href="./Activitats.html#Cursos">CURSOS</a></li>
+                        <li><a href="./Activitats.html#Escoles">ESCOLES</a></li>
+                    <!--Creem la llista dels diferents apartats del desplegable-->
+                        <li><a href="./Activitats.html#Tallers">TALLERS</a><ul>
+                            <li><a href="./Activitats.html#Grupals">GRUPALS</a></li>
+                            <li><a href="./Activitats.html#Temporals">TEMPORALS</a></li>
+                            <li><a href="./Activitats.html#Escolars">ESCOLARS</a></li>
+                        </ul></li>
+                    </ul></li>
+                    <li><a href="./Botiga.html">BOTIGA</a><ul>
+                    <!--Creem la llista dels diferents apartats del desplegable-->
+                        <li><a href="./Botiga.html">SOUVENIRS</a></li>
+                        <li><a href="./Subhasta.html">SUBHASTES</a></li>
+                    </ul></li>
+                    <li><a href="./Blog.html">BLOG</a></li>
+                </ul>
+            </div>
+        </header>
+
+
+        <!--SLIDER-->
+        <!--Creem la llista d'imatges per crear el slider-->
+        <div class="slider">
+            <ul>
+                <li><img src="./Fotos/Lemecier.jpg" alt=""></li>
+                <li><img src="./Fotos/Jeff Koons.jpg" alt=""></li>
+                <li><img src="./Fotos/Malika.jpg" alt=""></li>
+                <li><img src="./Fotos/Edgar Degas.jpg" alt=""></li>
+                <li><img src="./Fotos/Theaster Gates.jpg" alt=""></li>
+                <li><img src="./Fotos/Javier Mariscal.jpg" alt=""></li>
+            </ul>
+        </div>
+
+
+        <!--INFO LATERAL-->   
+        <!--LOGOTIP-->
+        <img class="Logo" src="./Fotos/Logotip_NAAC.png" alt="">
+
+        <!--COMPTE D'USUARI-->
+        <!--Els 2 apartats per escollir-->
+        <div id="Pagar">
+            <ul class="Pag">
+                <li><a href="#">INICI SESSIÓ</a></li>
+                <li><a href="#">REGISTRE</a></li>
+            </ul>
+        </div>
+
+        <!--INFORMACIÓ-->
+        <div>
+            <!--Línia horitzontal-->
+            <hr></hr>
+            <!--Venta d'entrades-->
+            <a title="Entrades" href="./Entrades.html"><p class="TextEntrades"><img class="Entrades" src="./Fotos/Entrades.png">VENTA D'ENTRADES</p></a>
+            <!--Línia horitzontal-->
+            <hr></hr>
+            <!--Botó pel correu electrònic-->
+            <a title="Correu" href="./Contacta'ns.html"><img src="./Fotos/Correo.png" class="Correu" alt=""/></a>
+            <!--Botó pel telèfon-->
+            <a title="Telefon" href="./Contacta'ns.html"><img src="./Fotos/Telefono.png" class="Telefon" alt=""/></a>
+            <!--Botó per l'ubicació-->
+            <a title="Ubicacio" href="./Ubicacio.html"><img src="./Fotos/Ubicació.png" class="Ubicacio" alt=""/></a>
+            <!--Botó per les xarxes socials-->
+            <a title="Xarxes" href="./Xarxes.html"><img src="./Fotos/Xarxes.png" class="Xarxes" alt=""/></a>
+            <!--Línia horitzontal-->
+            <hr></hr>
+        </div>
+
+        <!--NOSALTRES-->
+        <!--Separació-->
+        <br>
+        <input type="checkbox" id="BotoN">
+        <label for="BotoN">NOSALTRES</label>
+            <nav class="Nosaltres">
+                <ul class="NosaltresU">
+                    <li>    El Museu NAAC es troba al bell mig de la ciutat de Lleida. Va ser construït el 1995 i des de llavors és el punt de 
+                    trobada entre els diferents artistes i ciutadans d'arreu del món.<br>
+                        Consta de 4 sales, destinades a diferents disciplines de l'art: art històric, art contemporani, disseny gràfic i
+                    vídeo i imatge. Conten amb diverses col·leccions permanents, i cada cert temps anem renovant les exposicions temporals. 
+                    És l'espai perfecte per aquelles ments curioses i creatives que volen passar una bona estona gaudint de l'art.</li>
+                </ul>
+            </nav>
+        <!--Separació-->
+        <br>
+        <!--Línia horitzontal-->
+        <hr></hr>
+
+        <!--COL·LABORA AMB NOSALTRES-->
+        <!--Separació-->
+        <br>
+        <input type="checkbox" id="BotoC">
+        <label for="BotoC">COL·LABORA AMB NOSALTRES</label>
+            <nav class="Col·labora">
+                <ul class="Col·laboraU">
+                    <li>    Ets un/a artista poc conegut/da que vols fer el salt al món, i fer visible el teu art?<br>
+                    Contacta amb nosaltres i presenta'ns el teu portfolio i després del teu pas pel Museu NAAC la teva carrera s'enlairarà 
+                    exponencialment.<br>
+                        Ets un/a apassionat/da de l'art i del disseny i t'agradaria formar-ne part? Vine a treballar amb nosaltres al Museu NAAC
+                    i fes dels teus dies, una obra d'art.</li>
+                </ul>
+            </nav>
+        <!--Separació-->
+        <br>
+        <!--Línia horitzontal-->
+        <hr></hr>
+        <!--Separació-->
+        <br>
+
+        <!--IDIOMA-->
+         <p class="TextIdioma"><img class="Idioma" src="./Fotos/Idioma.png" alt="">Idioma</p>
+
+         
+        <!--GALERIA-->
+        <!--Separació-->
+        <br> <br> <br> <br> <br> <br> <br> <br> 
+        
+        <!--Fotografies per la galeria-->
+        <div class="Galeria">
+            <img class="Foto" src="./Fotos/Lemecier.jpg" alt="">
+            <img class="Foto" src="./Fotos/Jeff Koons.jpg" alt="">
+            <img class="Foto" src="./Fotos/Malika.jpg" alt="">
+            <img class="Foto" src="./Fotos/Edgar Degas.jpg" alt="">
+            <img class="Foto" src="./Fotos/Theaster Gates.jpg" alt="">
+            <img class="Foto" src="./Fotos/Javier Mariscal.jpg" alt="">
+        </div>
+
+
+        <!--FOTTER-->
+        <footer>
+            <!--Imatges que compondran el footer-->
+            <img class="Footer" src="./Fotos/Ajuntament.jpg">
+            <img class="Footer" src="./Fotos/Generalitat.jpg">
+            <img class="Footer" src="./Fotos/Turisme.jpg">
+            <img class="Footer" src="./Fotos/Uni.jpg">
+        </footer>
+
+    </body>
+
+    
+</html>

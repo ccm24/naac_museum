@@ -1,0 +1,426 @@
+/*MENÚ*/
+/*Conceptes generals*/
+*{
+    /*Te una vora de 0px*/
+    padding: 0px;
+    /*Te marge de 0px*/
+    margin: 0px;
+}
+
+/*Afecta al contenidor div, que englova tot el menú */
+#header{
+    /*L'alçada que tindrà*/
+    height: 60px;
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:center;
+}
+
+.nav{
+    /*Genera una caixa d'element bloc però es mou amb el contingut*/
+    display: inline-block;
+    /*Especifica l'apariencia del llistat dient-li que no volem cap*/
+    list-style-type: none;
+}
+
+/*Afecta a les llistes*/
+ul, ol{
+    /*No tindrà cap estil*/
+    list-style: none;
+}
+
+/*Estil pels nostre menú*/
+.nav li a{
+    /*Color del fons*/
+    background-color: white;
+    /*Color de la lletra*/
+    color: black;
+    /*Diem que no tingui decoració les paraules*/
+    text-decoration: none;
+    /*Mida de la tipografia*/
+    font-size: 22px;
+    /*Que tingui un marge de 10px d'altura i un marge de 15px d'amplada*/
+    padding: 10px 15px;
+    /*Que sigui considerat un block*/
+    display: block;
+    width: 170px;
+}
+
+/*Estil pel nostre menú quan el ratolí passi per damunt*/
+.nav li a:hover{
+    /*Color del fons*/
+    background-color: red;
+}
+
+/*Li directes de dins del nav*/
+.nav > li{
+    /*Li donem forma*/
+    float: left;
+}
+
+/*Afecta als ul dels li del nav*/
+.nav li ul{
+    /*Desapareixen els submenús*/
+    display: none;
+    /*Posició absoluta */
+    position:absolute;
+    /*Mida del recuadre del submenú*/
+    min-width: 182px;
+}
+
+/*Afecta als li del nav directes del ul quan passa el ratolí per damunt*/
+.nav li:hover> ul{
+    /*Ho transformem en block perquè surtin els blocs al costat*/
+    display:block;
+}
+
+/*Afecta als li dels ul dels li dintre de nav, serien els submenús*/
+.nav li ul li{
+    /*Posició relativa*/
+    position: relative;
+}
+
+/*Afecta als ul dels li dels ul dels li dintre de nav*/
+.nav li ul li ul{
+    /*Que es col·loqui a la dreta*/
+    left: 200px;
+    /*Peerquè la seva posició sigui 0*/
+    top: 0px;
+    
+    
+}
+
+
+
+/*SLIDER*/
+.slider {
+    /*Mida del slider*/
+    width: 72%;
+    /*Marge del slider, en aquest cas no ni ha*/
+    margin: none;
+    /*Fa que no es vegi el principi-final de les imatges*/
+    overflow:hidden;  
+    /*Que estigui situat al costat dret de la pàgina */
+    float: left;
+}
+
+/*Afecta als paràmetres ul de dins del slider, nomenats al html*/
+.slider ul {
+    /*Fa que surtin totes en horitzontal*/
+    display: flex;
+    padding: 0;
+    width: 600%;
+    /*Cada quant es canvien les imatges i com*/
+    animation: cambio 20s infinite alternate;
+}
+
+/*Afecta als paràmetres li de dins del slider, nomenats al html*/
+.slider li {
+    width: 100%;
+    /*Que no surtin en format llista*/
+    list-style: none;
+}
+
+/*Afecta a les imatges de dins del slider, nomenats al html*/
+.slider img {
+    /*Fa que la imatge ocupi tot el slider*/
+    width: 100%;
+}
+
+/*Diem de quin segon a quin segon surtirà la fotografia i quin temps tindrà per la transmisió*/
+@keyframes cambio {
+    0% { margin-left: 0;}
+    13% { margin-left: 0;}
+
+    19% { margin-left: -100%;}
+    29% { margin-left: -100%;}
+
+    36% { margin-left: -200%;}
+    46% { margin-left: -200%;}
+
+    53% { margin-left: -300%;}
+    63% { margin-left: -300%;}    
+
+    69% { margin-left: -400%;}
+    80% { margin-left: -400%;}   
+    
+    88% { margin-left: -500%;}
+    100% { margin-left: -500%;}
+
+}
+
+
+
+/*INFO LATERAL*/
+/*LOGO DEL MUSEU*/
+.Logo{
+    /*Mida del logo*/
+    width:20%;
+    /*Genera un quadre d'element bloc*/
+    display: block;
+    /*No te marge superior però si als costats, de forma automàtica perquè quedi centrat*/
+    margin: 0 auto;
+}
+
+/*COMPTE D'USUARI*/
+#Pagar{
+    /*L'alçada que tindrà*/
+    height: 60px;
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:center;
+    /*Deix un marge a la part superior*/
+    padding-top: 5px;
+}
+
+.Pag{
+    /*Genera una caixa d'element bloc però es mou amb el contingut*/
+    display: inline-block;
+    /*Especifica l'apariencia del llistat dient-li que no volem cap*/
+    list-style-type: none;
+}
+
+/*Afecta a les llistes*/
+ul, ol{
+    /*No tindrà cap estil*/
+    list-style: none;
+}
+
+/*Estil pels nostre menú*/
+.Pag li a{
+    /*Color del fons*/
+    background-color: white;
+    /*Color de la lletra*/
+    color: black;
+    /*Diem que no tingui decoració les paraules*/
+    text-decoration: none;
+    /*Mida de la tipografia*/
+    font-size: 22px;
+    /*Que tingui un marge de 10px d'altura i un marge de 15px d'amplada*/
+    padding: 10px 15px;
+    /*Que sigui considerat un block*/
+    display: block;
+    width: 170px;
+}
+
+/*Estil pel nostre menú quan el ratolí passi per damunt*/
+.Pag li a:hover{
+    /*Color del fons*/
+    background-color: red;
+}
+
+/*Li directes de dins del nav*/
+.Pag > li{
+    /*Li donem forma*/
+    float: left;
+}
+
+/*Afecta als ul dels li del nav*/
+.Pag li ul{
+    /*Desapareixen els submenús*/
+    display: none;
+    /*Posició absoluta */
+    position:absolute;
+    /*Mida del recuadre del submenú*/
+    min-width: 182px;
+}
+
+/*Afecta als li del nav directes del ul quan passa el ratolí per damunt*/
+.Pag li:hover> ul{
+    /*Ho transformem en block perquè surtin els blocs al costat*/
+    display:block;
+}
+
+/*Afecta als li dels ul dels li dintre de nav, serien els submenús*/
+.Pag li ul li{
+    /*Posició relativa*/
+    position: relative;
+}
+
+/*Afecta als ul dels li dels ul dels li dintre de nav*/
+.Pag li ul li ul{
+    /*Que es col·loqui a la dreta*/
+    left: 200px;
+    /*Peerquè la seva posició sigui 0*/
+    top: 0px;
+    
+    
+}
+
+
+
+/*IDIOMA*/
+/*Fotografia de l'idioma*/
+.Idioma{
+    /*Amplada de la fotografia*/
+    width: 30px;
+    /*Margge d ela fotografia, 0px d'amplada i 15px al costat */
+    padding: 0px 15px;  
+}
+
+/*Text de l'idioma*/
+.TextIdioma{
+    /*Quina tipografia utilitzarem*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:center;
+    /*Mida d ela tipografia*/
+    font-size: 30px;
+    /*Que no tingui marge*/
+    padding:0px;   
+}
+
+
+
+/*VENTA D'ENTRADES*/
+/*Fotografia de les entrades*/
+.Entrades{
+    /*Amplada de la fotografia*/
+    width: 60px;
+    /*Marge de la fotografia, 0px d'alçada i 15px al costat*/
+    padding: 0px 15px; 
+    /*Que no tingui decoració*/
+    text-decoration: none;
+}
+
+/*Text de les entrades*/
+.TextEntrades{
+    /*Quina tipografia utilitzarem*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:center;
+    /*Mida d ela tipografia*/
+    font-size: 30px; 
+    /*Que no tingui decoració*/
+    text-decoration: none;
+}
+
+
+
+/*INFORMACIÓ L'ATERAL*/
+.Correu{
+    /*Amplada de la fotografia*/
+    width: 60px;
+    /*Marge de la fotografia, 0px d'alçada i 21px d'amplada*/
+    padding: 0px 21px;
+}
+
+.Telefon{
+    /*Amplada de la fotografia*/
+    width: 60px;
+    /*Marge de la fotografia, 0px d'alçada i 21px d'amplada*/
+    padding: 0px 21px; 
+}
+
+.Ubicacio{
+    /*Amplada de la fotografia*/
+    width: 60px;
+    /*Marge de la fotografia, 0px d'alçada i 21px d'amplada*/
+    padding: 0px 21px; 
+}
+
+.Xarxes{
+    /*Amplada de la fotografia*/
+    width: 60px;
+    /*Marge de la fotografia, 0px d'alçada i 21px d'amplada*/
+    padding: 0px 21px;
+}
+
+
+
+/*NOSALTRES*/
+/*Afecta al input anomenat BotoN*/
+#BotoN{
+    /*Perquè no es vegi la decoració del botó*/
+    display: none;
+}
+
+/*Afecta al label del input BotoN*/
+#BotoN label{
+    /*Genera un quadre d'element bloc*/
+    display: block;
+}
+
+.Nosaltres{
+    /*Perquè no es vegi el text*/
+    display: none;
+    /*Quina tipografia utilitzem*/
+    font-family: sans-serif;
+}
+
+/*Afecta al Nosaltres quan cliquem al BotoN*/
+#BotoN:checked ~ .Nosaltres{
+    /*Perquè  es vegi el text*/
+    display: block;
+}
+
+
+
+/*COL·LABORA AMB NOSALTRES*/
+/*Afecta al input anomenat BotoC*/
+#BotoC{
+    /*Perquè no es vegi la decoració del botó*/
+    display: none;
+}
+  
+/*Afecta al label del input BotoC*/
+#BotoC label{
+    /*Genera un quadre d'element bloc*/
+    display: block;
+}
+    
+.Col·labora{
+    /*Perquè no es vegi el text*/
+    display: none;
+    /*Quina tipografia utilitzem*/
+    font-family: sans-serif;
+}
+    
+#BotoC:checked ~ .Col·labora{
+    /*Perquè  es vegi el text*/
+    display: block;
+}
+
+
+
+/*GALERIA*/
+/*Galeria sota el slider*/
+.Galeria{
+    /*Calcula l'alçada i l'amplada de la galeria*/
+    box-sizing:border-box;
+    /*Les fotografies es comporten com un unic blog*/
+    display: flex;
+    /*Marge superior de la galeria*/
+    margin-top: 15px;
+}
+
+.Foto{
+    /*Amplada de les fotografies*/
+    width: 12%;
+    /*Alçada de les fotografies*/
+    height: 12%;
+}
+
+
+
+/*FOOTER*/
+/*Fotografies del footer*/
+.Footer{
+    /*Amplada de les fotografies*/
+    width: 5%;
+    /*Alçada de les fotografies*/
+    height: 5%;
+}
+
+/*Posició del footer*/
+footer{
+    /*Color de fons*/
+    background-color: white;
+    /*Marge automàtic amb el text superior*/
+    margin-top: auto;
+    /*Fotografies centrades*/
+    text-align: center;
+}
+

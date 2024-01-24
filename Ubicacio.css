@@ -1,0 +1,294 @@
+/*FONS*/
+/*Afecta a l'etiqueta body*/
+body{
+    /*Imatge de fons*/
+    background-image: url(./Fotos/Fondo.jpg);
+    /*Perquè no es repeteixi la imatge*/
+    background-repeat: no repeat;
+     /*Que la imatge estigui fixe quan es faci scroll*/
+    background-attachment: fixed;
+     /*La mida de la imatge*/
+    background-size: 100%;
+}
+  
+  
+  
+/*MENÚ*/
+/*Conceptes generals*/
+*{
+    /*Te una vora de 0px*/
+    padding: 0px;
+    /*Te marge de 0px*/
+    margin: 0px;
+}
+  
+/*Afecta al contenidor div, que englova tot el menú */
+#header{
+    /*L'alçada que tindrà*/
+    height: 60px;
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:left;
+    /*Color del fons del menú*/
+    background-color: white;
+}
+  
+.nav{
+    /*Genera una caixa d'element bloc però es mou amb el contingut*/
+    display: inline-block;
+    /*Especifica l'apariencia del llistat dient-li que no volem cap*/
+    list-style-type: none;
+    /*Marge entre el menú i la part superior*/
+    margin-top: 10px;
+}
+  
+/*Afecta a les llistes*/
+ul, ol{
+    /*No tindrà cap estil*/
+    list-style: none;
+}
+  
+/*Estil pels nostre menú*/
+.nav li a{
+    /*Color del fons*/
+    background-color: white;
+    /*Color de la lletra*/
+    color: black;
+    /*Diem que no tingui decoració les paraules*/
+    text-decoration: none;
+    /*Mida de la tipografia*/
+    font-size: 22px;
+    /*Que tingui un marge de 10px d'altura i un marge de 15px d'amplada*/
+    padding: 10px 15px;
+    /*Que sigui considerat un block*/
+    display: block;
+    width: 170px;
+}
+  
+/*Estil pel nostre menú quan el ratolí passi per damunt*/
+.nav li a:hover{
+    /*Color del fons*/
+    background-color: red;
+}
+  
+/*Li directes de dins del nav*/
+.nav > li{
+    /*Li donem forma*/
+    float: left;
+}
+  
+/*Afecta als ul dels li del nav*/
+.nav li ul{
+    /*Desapareixen els submenús*/
+    display: none;
+    /*Posició absoluta */
+    position:absolute;
+    /*Mida del recuadre del submenú*/
+    min-width: 182px;
+}
+  
+/*Afecta als li del nav directes del ul quan passa el ratolí per damunt*/
+.nav li:hover> ul{
+    /*Ho transformem en block perquè surtin els blocs al costat*/
+    display:block;
+}
+  
+/*Afecta als li dels ul dels li dintre de nav, serien els submenús*/
+.nav li ul li{
+    /*Posició relativa*/
+    position: relative;
+}
+  
+/*Afecta als ul dels li dels ul dels li dintre de nav*/
+.nav li ul li ul{
+    /*Que es col·loqui a la dreta*/
+    left: 200px;
+    /*Peerquè la seva posició sigui 0*/
+    top: 0px;
+}
+  
+  
+  
+/*LOGO DEL MUSEU*/
+.Logo{
+    /*Amplada de la fotografia*/
+    width:20%;
+    /*Posició del logo*/
+    float: right;
+    /*Marge dret de la fotografia*/
+    margin-right: 20px;
+    /*Color de fons*/
+    background-color: white;
+}
+  
+  
+  
+  /*COMPTE D'USUARI*/
+#Pagar{
+    /*L'alçada que tindrà*/
+    height: 60px;
+    /*La tipografia que tindrà*/
+    font-family: sans-serif;
+    /*El text estarà centrat*/
+    text-align:right;
+    /*Deix un marge a la part superior*/
+    padding-top: 140px;
+    margin-right: 20px;
+}
+
+.Pag{
+    /*Genera una caixa d'element bloc però es mou amb el contingut*/
+    display: inline-block;
+    /*Especifica l'apariencia del llistat dient-li que no volem cap*/
+    list-style-type: none;
+}
+  
+/*Afecta a les llistes*/
+ul, ol{
+    /*No tindrà cap estil*/
+    list-style: none;
+}
+  
+/*Estil pels nostre menú*/
+.Pag li a{
+    /*Color del fons*/
+    background-color: white;
+    /*Color de la lletra*/
+    color: black;
+    /*Diem que no tingui decoració les paraules*/
+    text-decoration: none;
+    /*Mida de la tipografia*/
+    font-size: 15px;
+    /*Que tingui un marge de 10px d'altura i un marge de 15px d'amplada*/
+    padding: 10px 15px;
+    /*Que sigui considerat un block*/
+    display: block;
+    /*Ample del recuadre*/
+    width: 122px;
+    /*Perque el text estigui al centre*/
+    text-align: center;
+}
+  
+/*Estil pel nostre menú quan el ratolí passi per damunt*/
+.Pag li a:hover{
+    /*Color del fons*/
+background-color: red;
+}
+  
+/*Li directes de dins del nav*/
+.Pag > li{
+    /*Li donem forma*/
+    float: left;
+}
+
+
+
+/*FORMULARI*/
+/*Actua a sobre de tot el formular*/
+form{
+    /*Amplada que tindrà*/
+    width: 600px;
+    /*Marge automàtic*/
+    margin: auto;
+    /*Color del fons*/
+    background: rgba(255, 255, 255,0.3);
+    /*Quin farcit tindrà*/
+    padding: 10px 20px;
+    /*Perquè el farcit vagi cap a dintre i no surti*/
+    box-sizing: border-box;
+    /*La separació que tindrà amb el títol*/
+    margin-top: 20px;
+    /*Perquè es rodoneixin les puntes*/
+    border-radius: 20px;
+}
+
+/*Afecta al recuadre gran i als petits, on s'escriu el missatge i qui ets*/
+input, textarea{
+    /*Amplada que tindrà*/
+    width: 100%;
+    /*El marge que tindrà a la part de dal*/
+    margin-bottom: 15px;
+    /*El farcit que tindrà*/
+    padding: 7px;
+    /*Perquè el farcit vagi cap a dintre i no cap a fora*/
+    box-sizing: border-box;
+    /*Mida de la lletra*/
+    font-size: 10px;
+    /*Que no tingui contorn*/
+    border: none;
+}
+
+/*Afecta al recuadre gran, on s'escriu el missatge*/
+textarea{
+    /*Altura mínima*/
+    min-height: 100px;
+    /*Altura màxima*/
+    max-height: 300px;
+    /*Amplada maxima*/
+    max-width: 100%;
+    
+}
+/*Afecta al boto*/
+#Boto{
+    /*Color del fons del boto*/
+    background:rgb(255, 255, 255,);
+    /*Color de les lletres del boto*/
+    color: black;
+    /*Amplada que tindrà el boto*/
+    padding: 10px;
+}
+
+/*Afecta quan es passa el ratolí per damunt el boto*/
+#Boto:hover{
+    /*Fa que surti una ma*/
+    cursor: pointer;  
+}
+
+
+
+
+/*Títol de la pàgina*/
+h1{
+    /*El color del text sigui blanc*/
+    color: white;
+    /*Quina tipografia vull pel text*/
+    font-family: sans-serif;
+    /*Per centrar el text*/
+    text-align: center;
+}
+
+/*Informació de la pàgina*/
+p{
+    /*Posem en negreta la lletra*/
+    font-weight: bold;
+    /*El color del text sigui blanc*/
+    color: white;
+    /*Quina tipografia vull pel text*/
+    font-family: sans-serif;
+    /*Mida del text*/
+    font-size: 14px;
+    /*Per centrar el text*/
+    text-align: center;
+}
+
+
+
+/*FOOTER*/
+/*Fotografies del footer*/
+.Footer{
+    /*Amplada de les fotografies*/
+    width: 5%;
+    /*Alçada de les fotografies*/
+    height: 5%;
+}
+
+/*Posició del footer*/
+footer{
+    /*Color de fons*/
+    background-color: white;
+    /*Marge de 90px amb el text superior*/
+    margin-top: 10px;
+    /*Fotografies centrades*/
+    text-align: center;
+}
